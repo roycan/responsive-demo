@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<!--This is the main webpage-->
+
+<head>
+    <title>Bell & Audrey's Library</title>
+    <meta name="author" content="Samantha Isabelle Bondoc">
+    <meta name="author" content="Audrey Felicity S. Cayabyab">
+    <link rel="icon" type="image/x-con" href="Assets/WebLogo.PNG">
+    <link rel="stylesheet" type="text/css" href="css files/WebsiteBase.css">
+    <link rel="stylesheet" type="text/css" href="css files/WebsiteHeader.css">
+    <link rel="stylesheet" type="text/css" href="css files/HomePage.css">
+    <link rel="stylesheet" type="text/css" href="css files/SideBar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive Navigation */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            text-align: center;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-menu {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+
+            .site-title {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Website Header -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="Assets/WebLogo.PNG" alt="Liszt as filler logo" class="logo">
+                <h3 class="site-title">Audrey & Bell's Library ⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆</h3>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="Minigame.html">🎮 Minigames</a></li>
+                <li><a href="AboutPage.html">📝 About Us</a></li>
+                <li><a href="ContactsPage.html">📮 Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End of Website Header -->
+
+    <!-- Website Introduction -->
+    <main class="main-content">
+        <section class="hero-section">
+            <img src="Assets/WebHeader.PNG" class="hero-image" alt="Library Header">
+            <p class="intro-text">Hello! We are Bell and Audrey, and welcome to our online library. We are here as a small
+                space to introduce you to some of our favorite books, music, and animated works. This is a website to browse
+                and find some recomendations. :D</p>
+        </section>
+    <!-- End of Website Introduction -->
+
+        <!-- Website Pages-->
+        <section class="content-grid">
+            <div class="card">
+                <a href="books.html"><img src="Assets/BooksImage.jpg" alt="Featured Books"></a>
+                <h2>Featured Books</h2>
+            </div>
+            <div class="card">
+                <a href="music.html"><img src="Assets/MusicImage.jpg" alt="Featured Music"></a>
+                <h2>Featured Music</h2>
+            </div>
+            <div class="card">
+                <a href="animatedSeries.html"><img src="Assets/AnimatedSeriesImage.jpg" alt="Featured Animations"></a>
+                <h2>Featured Animations</h2>
+            </div>
+        </section>
+        <!-- End of Website Pages-->
+    </main>
+
+</body>
+
+</html>

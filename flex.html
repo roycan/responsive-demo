@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No-JS Responsive Demo</title>
+    <style>
+        body { font-family: sans-serif; background: #f0f2f5; padding: 20px; text-align: center; }
+        
+        /* THE LAYOUT */
+        .container {
+            display: flex;
+            flex-direction: column; /* Mobile first */
+            gap: 15px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        @media (min-width: 768px) {
+            .container { flex-direction: row;  }
+            body {background: lavender;}
+        }
+
+        /* CARD AS A BUTTON */
+        .card-btn {
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .card-btn:hover { border-color: #3273dc; background: #eef4ff; }
+
+        /* POPOVER STYLING */
+        [popover] {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 2rem;
+            max-width: 400px;
+            /* Center it on the screen */
+            margin: auto; 
+        }
+
+        /* This creates the dark background behind the popover */
+        [popover]::backdrop {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML-Only Interactive Demo</h1>
+    <p>Click a card to see the code using the new <code>popover</code> attribute.</p>
+
+    <div class="container">
+        <button class="card-btn" popovertarget="code-mobile">
+            <h3>📱 Mobile Code</h3>
+            <p>Click for CSS</p>
+        </button>
+
+        <button class="card-btn" popovertarget="code-media">
+            <h3>⚡ Breakpoint</h3>
+            <p>Click for CSS</p>
+        </button>
+
+        <button class="card-btn" popovertarget="code-desktop">
+            <h3>💻 Desktop Code</h3>
+            <p>Click for CSS</p>
+        </button>
+    </div>
+
+    <div id="code-mobile" popover>
+        <h3>Mobile-First Layout</h3>
+        <pre>.container {
+  display: flex;
+  flex-direction: column;
+}</pre>
+    </div>
+
+    <div id="code-media" popover>
+        <h3>The Media Query</h3>
+        <pre>@media (min-width: 768px) {
+  /* Rules for larger screens */
+}</pre>
+    </div>
+
+    <div id="code-desktop" popover>
+        <h3>Desktop Layout</h3>
+        <pre>.container {
+  flex-direction: row;
+}</pre>
+    </div>
+
+</body>
+</html>

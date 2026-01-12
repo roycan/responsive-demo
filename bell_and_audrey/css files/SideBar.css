@@ -1,0 +1,28 @@
+.Sidebar {
+    margin: 10px 40px 10px 0px;
+    background-color: #212738;
+    color: white;
+    padding: 30px 90px 30px 10px;
+    float: left;
+    font-size: 18px;
+}
+
+.Sidebar h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+.Sidebar a {
+    display: block;
+    color: rgb(209, 209, 209);
+    padding: 20px 45px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.Sidebar a:hover {
+    color: #ffffff;
+}
+
+

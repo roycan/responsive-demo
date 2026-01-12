@@ -1,0 +1,56 @@
+/* Don't edit this yet pls */
+
+
+.ContactsHeader {
+    font-size: 60px;
+    margin-left: 50px;
+    margin-top: 10 px;
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-size: 35px;
+    margin-left: 25x;
+    margin-bottom: 0px;
+    margin-top: 60px;
+
+}
+
+.contactsBell {
+    display: flex;
+    color: rgb(36, 36, 36);
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 100px;
+    margin-left: 375px;
+}
+
+.contactsAudrey {
+    display: flex;
+    color: rgb(36, 36, 36);
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+
+.contactsInfo div {
+    margin-right: 50px;
+    
+    
+}
+
+.contactsAudrey div img {
+    margin-left: 200px;
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.contactsBell div img {
+    margin-left: 200px;
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    padding: 20px;
+}

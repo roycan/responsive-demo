@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulma Interactive Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    
+    <style>
+
+        /* Styling the Popover */
+        [popover] {
+            border: none;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+            max-width: 500px;
+            margin: auto;
+        }
+
+        [popover]::backdrop {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        pre {
+            background: #232323;
+            color: #bdffbd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body class="has-background-light" style="min-height: 100vh; padding-top: 50px;">
+
+    <div class="container has-text-centered">
+        <h1 class="title">Bulma "Mobile-First" Explorer</h1>
+        <p class="subtitle">Click a column to see how Bulma handles the layout!</p>
+
+        <div class="columns is-centered">
+            
+            <div class="column is-4">
+                <div class="card" >
+                    <div class="notification is-link">
+                        <p class="title is-5">1. The Parent</p>
+                        <button class="button" popovertarget="pop-columns">
+                            Click to see the <code>.columns</code> class.
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-4">
+                <div class="card" >
+                    <div class="notification is-info">
+                        <p class="title is-5">2. The Child</p>
+                        <button class="button" popovertarget="pop-column">
+                            Click to see the <code>.column</code> class.
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-4">
+                <div class="card">
+                    <div class="notification is-primary">
+                        <p class="title is-5">3. Automatic</p>
+                        <button class="button" popovertarget="pop-responsive">
+                            Click to see responsiveness work.
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="pop-columns" popover>
+        <h3 class="title is-4">The Container</h3>
+        <p>In Bulma, you wrap everything in a <code>columns</code> div. This activates Flexbox.</p>
+        <pre>&lt;div class="columns"&gt;
+  &lt;/div&gt;</pre>
+    </div>
+
+    <div id="pop-column" popover>
+        <h3 class="title is-4">The Individual Item</h3>
+        <p>Each item inside uses the <code>column</code> class. Bulma divides the space equally by default.</p>
+        <pre>&lt;div class="column"&gt;
+  Content here
+&lt;/div&gt;</pre>
+    </div>
+
+    <div id="pop-responsive" popover>
+        <h3 class="title is-4">Built-in Responsiveness</h3>
+        <p>Bulma is <b>Mobile-First</b>. This means columns automatically stack on phones and turn into a row on tablets/desktops without you writing any CSS!</p>
+        <pre>/* No CSS needed! 
+   Bulma handles the 
+   @media queries for you. */</pre>
+    </div>
+
+</body>
+</html>

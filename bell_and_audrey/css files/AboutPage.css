@@ -1,0 +1,52 @@
+/* Don't edit this yet pls */
+
+.abtusHeader {
+    font-size: 60px;
+    margin-left: 50px;
+    margin-top: 10 px;
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 0px;
+    margin-top: 60px;
+}
+
+.headingAudrey {
+    margin-left: 250px;
+}
+
+.HeadingBell {
+    margin-left: 375px;
+}
+
+.creatorInfo {
+    display: flex;
+    color: rgb(36, 36, 36);
+    text-align: justify;
+}
+
+.creatorInfo p {
+    font-size: 20px;
+}
+
+.AudreyInfo {
+    margin: 35px 75px 50px 0px;
+}
+
+.BellInfo {
+    margin: 35px 75px 50px 375px;
+}
+
+.creatorInfo div img {
+    margin-right: 120px;
+    width: 250px;
+    height: auto;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+
+
+

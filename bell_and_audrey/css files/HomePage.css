@@ -1,0 +1,54 @@
+.WebsiteIntro {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.introtext {
+    font-size: 18px;
+    color: #333333;
+    margin-top: 50px;
+    line-height: 1.6;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.WebsiteIntro img {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.row1 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.pagebox {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.pagebox img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.pagebox img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.line {
+    border-left: 6px solid #212738;
+    height: 375px;
+    margin-left: 100px;
+    margin-right: 100px;
+}

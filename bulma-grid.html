@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulma Grid Mimic Interactive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    
+    <style>
+        /* Make the entire card a clickable button */
+        .grid-trigger {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+            display: block;
+        }
+
+    </style>
+</head>
+<body class="section has-background-white-ter">
+
+    <div class="container">
+        <h1 class="title has-text-centered">Bulma Grid Mimic</h1>
+        <p class="subtitle has-text-centered">Click a box to see the "12-Column" math!</p>
+
+        <div class="columns is-multiline">
+            
+            <div class="column is-4">
+                <button class="grid-trigger" popovertarget="pop-multiline">
+                    <div class="box has-background-warning has-text-weight-bold">
+                        1. The "Multiline" Container
+                    </div>
+                </button>
+            </div>
+
+            <div class="column is-4">
+                <button class="grid-trigger" popovertarget="pop-math">
+                    <div class="box has-background-warning has-text-weight-bold">
+                        2. The "is-4" Math
+                    </div>
+                </button>
+            </div>
+
+            <div class="column is-4">
+                <button class="grid-trigger" popovertarget="pop-math">
+                    <div class="box has-background-warning has-text-weight-bold">
+                        3. The "is-4" Math
+                    </div>
+                </button>
+            </div>
+
+            <div class="column is-4">
+                <button class="grid-trigger" popovertarget="pop-wrap">
+                    <div class="box has-background-danger has-text-white has-text-weight-bold">
+                        4. The Wrap Effect
+                    </div>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="pop-multiline"  popover >
+        <h3 class="title is-5 has-text-info">The is-multiline Class</h3>
+        <p>By default, Bulma tries to fit all columns in one row. Adding <code>is-multiline</code> allows them to wrap to the next line.</p>
+        <pre class="has-background-black has-text-success">&lt;div class="columns is-multiline"&gt;</pre>
+    </div>
+
+    <div id="pop-math" popover>
+        <h3 class="title is-5 has-text-info">Grid Math (is-4)</h3>
+        <p>Bulma uses a 12-column system. <b>12 / 4 = 3</b>. So, <code>is-4</code> creates 3 equal columns per row.</p>
+        <pre class="has-background-black has-text-success">&lt;div class="column is-4"&gt;</pre>
+    </div>
+
+    <div id="pop-wrap" popover>
+        <h3 class="title is-5 has-text-info">Why did this wrap?</h3>
+        <p>Since the first three boxes already took up all 12 slots (4+4+4), the 4th box has no room and "wraps" to the next row automatically!</p>
+        <pre class="has-background-black has-text-success">&lt;!-- Row 1 is full (12/12) --&gt;
+&lt;!-- This box starts Row 2 --&gt;</pre>
+    </div>
+
+</body>
+</html>

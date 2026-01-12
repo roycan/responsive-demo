@@ -1,0 +1,39 @@
+table, th, td {
+    border:2px solid black;
+    text-align: center;
+    width: fit-content;
+    margin-left: 375px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+}
+
+th {
+    background-color: #212738;
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+}
+
+td {
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    margin: 10px;
+    width: 150px;
+    height: auto;
+}
+
+h1 {
+    text-align: left;
+    margin: 30 px;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: left;
+    margin-left: 400px;
+    font-size: 30px;
+}

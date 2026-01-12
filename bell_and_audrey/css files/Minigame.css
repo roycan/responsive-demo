@@ -1,0 +1,46 @@
+.Minigameheader {
+    font-size: 36px;
+    font-weight: bold;
+
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.Minigamedesc {
+
+    font-size: 18px;
+    color: #333333;
+    margin-top: 20px;
+    line-height: 1.6;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.Minigame {
+    text-align: left;
+    margin-left: 150px;
+    margin-top: 50px;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #212738;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inputbox {
+    padding: 20px;
+    font-size: 18px;
+    width: 100px;
+    margin-left: 10px;
+}

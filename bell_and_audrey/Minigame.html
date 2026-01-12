@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html>
+
+        <head> 
+            <meta name="author" content="Samantha Isabelle Bondoc">
+            <meta name="author" content="Audrey Flicity S. Cayabyab">
+            <link rel="icon" type="image/x-icon" href="Assets/WebLogo.PNG">
+            <link rel="stylesheet" type="text/css" href="css files/WebsiteBase.css">
+            <link rel="stylesheet" type="text/css" href="css files/WebsiteHeader.css">
+            <link rel="stylesheet" type="text/css" href="css files/AboutPage.css">
+            <link rel="stylesheet" type="text/css" href="css files/Minigame.css">
+            <link rel="stylesheet" type="text/css" href="css files/SideBar.css">
+            <title>Minigame</title></head>
+        </head>
+
+        <body>
+            <!-- Website Header -->
+                <ul class="header">
+                    <li><img src="Assets/WebLogo.PNG" alt="Website logo" class="logo"></li>
+                    <li class="title"><h3>Audrey & Bell's Library   ⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆</h3></li>
+                    <li><a href="index.html">🏠 Home</a></li>
+                    <li><a href="Minigame.html">🎮 Minigames</a></li>
+                    <li><a href="AboutPage.html">📝 About Us</a></li>
+                    <li><a href="ContactsPage.html">📮 Contacts</a></li>
+                </ul>
+            <!-- End of Website Header -->
+
+            <!-- Side Bar -->
+                <div class="Sidebar">
+                    <h2 style = "padding-left:20px;">MEDIA</h2>
+                    <a href="animatedseries.html">📺 Animated Series</a><br>
+                    <a href="books.html">📚 Books</a><br>
+                    <a href="music.html">🎧 Music</a>
+                </div>
+            <!-- End of Side Bar -->
+
+            <!-- Minigame -->
+                <h1 class="Minigameheader">Number Guessing Game</h1>
+                <p class="Minigamedesc">This is a simple minigame where you guess the a number randomly generated. The game will give you hints whether the number is higher or lower. Have fun!</p>
+                
+                <div class="Minigame">
+                    <p>The number is from 1 to 100.</p>
+                    <p> Enter your guess : <input type="number" id="userGuess" class="inputbox"> </p>
+                    <button onclick="checkIt()">Check It</button>
+                    <div id="result"></div>
+                    <button onclick="location.reload()">Play Again</button>
+
+                    <!-- Java Script Code -->
+                    <script>
+                        var dNumber = Math.floor(Math.random() * 100) + 1; // generates a number from 1  to 100 when the page loads
+                        function checkIt() {
+                            var userGuess = parseInt(document.getElementById("userGuess").value);
+                            
+                            if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+                                document.getElementById("result").innerHTML = "Please enter a valid number between 1 and 100.";
+                                return;
+                            }
+                            else {
+                                if (userGuess < dNumber) {
+                                    document.getElementById("result").innerHTML = "Higher";
+                                }
+                                else if (userGuess > dNumber) {
+                                    document.getElementById("result").innerHTML = "Lower";
+                                }
+                                else {
+                                    document.getElementById("result").innerHTML = "You are correct!";
+                                }
+                            }
+                        }
+                    </script>
+                <!-- End of Java Script Code -->
+                </div>
+            <!-- End of Minigame -->
+        </body>
+    </html>
